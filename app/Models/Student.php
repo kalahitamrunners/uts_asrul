@@ -12,4 +12,8 @@ class Student extends Model
         'alamat',
         'tanggal_lahir',
     ];
+
+    protected $casts = [
+        'tanggal_lahir' => 'date',
+    ];
 }
